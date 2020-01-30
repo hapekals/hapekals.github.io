@@ -69,7 +69,10 @@ body {
 #titelimg img {
   z-index: -5;
   transform:translateZ(-100px) scale(2.45);
-  
+  -webkit-transform: translateZ(-100px) scale(2.45);
+  -moz-transform: translateZ(-100px) scale(2.45);
+  -ms-transform: translateZ(-100px) scale(2.45);
+  -o-transform: translateZ(-100px) scale(2.45);
 }
 
 .regular-wrapper {
