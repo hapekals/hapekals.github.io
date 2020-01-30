@@ -1,0 +1,38 @@
+#profbild {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 30%;
+}
+
+.column {
+    padding-left: 10%;
+}
+
+.centered {
+    text-align: center;
+}
+li {
+   
+}
+p  {
+    line-height: 32px;
+  }
+h1 {
+    padding-top: 2vw;
+}
+h4 {
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1450px) {
+    p {
+        line-height: 150%;
+      }
+    li {
+        line-height: 150%;
+    
+    }
+    #profbild {
+        margin-left: 0;
+    }
+}

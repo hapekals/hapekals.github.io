@@ -1,9 +1,200 @@
 <!DOCTYPE html>
 <html>
-<body>
+<head>
+  <link rel="stylesheet" href="css/style_main.css">
+  <link rel="stylesheet" href="css/topnav.css">
+  <link rel="stylesheet" href="css/text.css">
+  <link rel="stylesheet" href="css/imgoverlay.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/titel_fadein.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/topnav.js"></script>
+  <!--<script src="js/parallaxscroll.js"></script>-->
+</head>
 
-<h1>Heading</h1>
-<p>Paragraph.</p>
+<body>
+  <div class="topnav" id="myTopnav">
+    <ul>
+      <li><a href="javascript:void(0);" class="topnavicon" onclick="topnavMenu()">&#9776;</a></li>
+      <li><a href="#top">Home</a></li>
+      <li><a href="#arch">Architektur</a></li>
+      <li><a href="#pg">Photogrammetrie</a></li>
+      <li><a href="übermich.html">Über mich</a></li>
+    </ul>
+  </div>
+  <div class="paralax" onscroll="getScroll()">
+    <div class="paralax-wrapper" id="top">
+      <div class="imgoverlay"></div>
+      <div id="titelimg">
+        <img src="images/Turm/640.jpg" >
+      </div>
+      <div class="titelcontainer">
+        <div class="titel fade-in">Portfolio</div>
+        <hr class="trans--grow hr1">
+        <div class="untertitel fade-in">Hanspeter Kals</div>
+      </div>
+    </div>
+  
+    <div class="regular-wrapper">
+      <div class="projects">
+ <!------------------------------------------------------ Image Gallery -->
+        <div class="thema" id="arch">Architektur</div>
+       
+        <div class="row" >
+          <div class="column side">
+            <h2>Ausstellungsturm</h2>
+            <p></p>
+            <h3>Analyse</h3>
+            <p>Die Aufgabe umfasste eine Neuinterpretation eines vorgegebenen Referenzprojektes. Das zu bearbeitende Projekt war die Herberge „Albergo Pirovano“ von Franco Albini.</p>
+            <h3>Entwurf</h3>
+            <p>Aus den Vorgehenden Überlegungen entstand
+                ein Turm aus Holz, bestehend aus L-förmigen
+                Elementen die übereinadergestapelt und mit
+                Stützen aufgeständert sind.</p> 
+          </div>
+          <div class="column middle hoch">
+            <a href="turm.html">
+              <div class="imgoverlay"></div>
+              <img src="images/Turm/at_modellfoto_07.jpg"></a>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="column side">
+            <h2>Kammermusiksaal Reichenau</h2>
+            <p></p>
+            <p>Zwei monolithische Baukörper aus Beton umhüllen
+              die beiden eingebetteten Säle. Jeder Saal
+              bekommt sein eigenes Gebäude. Die zentrale
+              Plattform dient als Verbindung und gleichzeitig
+              als Vorbereich der beiden Betonkörper.</p>
+            <p>Der Komplex steht am Grenzbereich zwischen
+              Biotop und dem vorderen Kurpark. Die Ausrichtung
+              ist an den bestehenden Musikpavillon
+              angepasst. Der Zwischenbereich der Gebäude
+              ist eine Fortführung der Längsseite des Pavillons
+              und zugleich ein Portal bzw. Aufgang zum
+              Spazierweg am Damm. Der Dammweg ist auch
+              die Verbindung von den Parkplätzen bzw. vom
+              Bahnhof der Museumsbahn und dem Kurpark.</p> 
+            <p>Die Musikschule kann die 5 Einspielräume als
+              Übungsräume nutzen. Bei Konzertbetrieb ist
+              der Unterricht wie gewohnt in der Volksschule.
+              Das Café wird in den Baukörper integriert und
+              zum Teich hin ausgerichtet.</p> 
+          </div>
+          <div class="column middle">
+            <a href="musiksaal.html">
+              <div class="imgoverlay"></div>
+              <img src="images/Kammermusiksaal/km_schaubild.jpg"></a>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="column side">
+            <h2>Kapselhotel</h2>
+            <p>Ein Hotel an der Linken-Wienzeile auf der Höhe U-Bahnstation Längenfeldgasse. Das Gebäude besteht aus drei Bereichen.</p>
+            <p></p>
+            <p>- Permanentes Wohnen</p>
+            <p>- Temporäres Wohnen</p>
+            <p>- Gastronomie</p>
+            <p></p>
+            <p>Im Erdgeschoss befindet sich die öffentliche Zone mit Bar, Foyer für das Hotel und der Eingang für die in den oberen Geschossen befindlichen privaten Wohnungen. Durch die erhöhte Lage der Wohnungen wird ein Weitblick über die Stadt ermöglicht.</p> 
+            <p>Das Hotel ist ein low-budget Hotel. Die Gäste schlafen in Raumzellen. Es sind verschiedene Typen verfügbar.</p>
+          </div>
+          <div class="column middle">
+            <a href="Kapselhotel.html">
+              <div class="imgoverlay"></div>
+              <img src="images/Kapselhotel/1OG_Boxen.jpg"></a>
+          </div>
+        </div>
+
+
+        <div class="row">
+            <div class="column side">
+              <h2>Bauaufnahme und Echtzeitvisualisierung historischer Gebäude.</h2>
+              <p>Angewandte Photogrammetrie und Virtual-Reality am Beispiel von Schloss Waldenfels.</p>
+              <p><br></p>
+              <p>Zwei monolithische Baukörper aus Beton umhüllen
+                die beiden eingebetteten Säle. Jeder Saal
+                bekommt sein eigenes Gebäude. Die zentrale
+                Plattform dient als Verbindung und gleichzeitig
+                als Vorbereich der beiden Betonkörper.</p>
+              <p>Der Komplex steht am Grenzbereich zwischen
+                Biotop und dem vorderen Kurpark. Die Ausrichtung
+                ist an den bestehenden Musikpavillon
+                angepasst. Der Zwischenbereich der Gebäude
+                ist eine Fortführung der Längsseite des Pavillons
+                und zugleich ein Portal bzw. Aufgang zum
+                Spazierweg am Damm. Der Dammweg ist auch
+                die Verbindung von den Parkplätzen bzw. vom
+                Bahnhof der Museumsbahn und dem Kurpark.</p> 
+              <p>Die Musikschule kann die 5 Einspielräume als
+                Übungsräume nutzen. Bei Konzertbetrieb ist
+                der Unterricht wie gewohnt in der Volksschule.
+                Das Café wird in den Baukörper integriert und
+                zum Teich hin ausgerichtet.</p> 
+            </div>
+            <div class="column middle">
+              <a href="waldenfels.html">
+                <div class="imgoverlay"></div>
+                <img src="images/Waldenfels/punktwolke.png"></a>
+            </div>
+          </div>
+        <div class="thema" id="pg">Photogrammetrie</div>
+        <div class="row" >
+          <div class="column drei">
+            <a href="wfStatue01.html">
+              <div class="imgoverlay"></div>
+              <img src="images/statue_01_wf/wf_01.png"></a>
+              <div class="fototitel">Statue Schloss Waldenfels</div></div>
+          <div class="column drei">
+              <a href="wfStatue02.html">
+                <div class="imgoverlay"></div>
+                <img src="images/statue_02_wf/wf_02.png"></a>
+                <div class="fototitel">Statue Schloss Waldenfels</div></div>
+          <div class="column drei">
+              <a href="ppStatue.html">
+                <div class="imgoverlay"></div>
+                <img src="images/Statue/denseCloude_01.png"></a>
+                <div class="fototitel">Statue Pötzleinsdorfer Schlosspark</div></div>
+        </div>
+        <div class="row" >
+          <div class="column l">
+              <a href="waldenfels.html">
+                  <div class="imgoverlay"></div>
+                  <img src="images/Waldenfels/004.PNG"></a>
+                  <div class="fototitel">Schloss Waldenfels</div></div>
+          <div class="column l">
+            <a href="wfInnenräume.html">
+              <div class="imgoverlay"></div>
+              <img src="images/Waldenfels/Raum_gleichmäßiges_Licht_kontr.png"></a>
+              <div class="fototitel">Schloss Waldenfels Innenräume</div></div>
+        </div>
+        <div class="row" >
+          <div class="column l">
+            <a href="pavillon.html">
+              <div class="imgoverlay"></div>
+              <img src="images/Pavillon/PunktwolkePavillon.png"></a>
+              <div class="fototitel">Pavillon Pötzleinsdorfer Schlosspark</div></div>
+        </div>
+      </div>
+<!------------------------------------------------------ Photogrammetrie -->
+      
+    </div>
+  </div>
+
+  <footer>
+    Footer
+    <!--<i class="material-icons">accessibility</i>
+      <i class="material-icons">home</i>
+      <i class="material-icons">email</i>
+      <i class="material-icons">call</i>
+      <i class="material-icons">http</i>-->
+  </footer>
 
 </body>
 </html>

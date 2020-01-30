@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/style_proj.css">
+  <link rel="stylesheet" href="css/topnav.css">
+  <link rel="stylesheet" href="css/text.css">
+  <link rel="stylesheet" href="css/imgoverlay.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/titel_fadein.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/topnav.js"></script>
+  <!--<script src="js/parallaxscroll.js"></script>-->
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <ul>
+      <li><a href="javascript:void(0);" class="topnavicon" onclick="topnavMenu()">&#9776;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#arch">Architektur</a></li>
+      <li><a href="index.html#pg">Photogrammetrie</a></li>
+      <li><a href="übermich.html">Über mich</a></li>
+    </ul>
+  </div>
+
+  <div class="side">
+    <div class="beschreibung">
+      <h2>Bauaufnahme und Echtzeitvisualisierung historischer Gebäude.</h2>
+      <h2>Angewandte Photogrammetrie und Virtual-Reality am Beispiel von Schloss Waldenfels. <br><br> Digital Architecture and Planning Diplomarbeit 2019</h2>
+      <p>Die Vermittlung von Raumwirkungen und Atmosphären ist ein wichtiger Faktor in der Architektur. Besonders bei der Präsentation von Veranstaltungsräumen ist das Erleben der Raumwirkung entscheidend. Die Veranstalter sowie die auftretenden Künstler wollen wissen, welche Räumlichkeiten am Standort vorhanden sind und ob sich diese für ihr Vorhaben eignen.</p>
+      <p>Eine besondere Herausforderung stellt die Visualisierung von historischen Gebäuden und Räumen dar. Die Atmosphäre historischer Räume entsteht oft durch die über Jahrhunderte entstandene Patina, die Materialität und die besonderen Geometrien.
+      Mit der traditionellen 2D-Plandarstellung können diese Qualitäten nicht abgebildet werden. Auch Fotos oder Renderings stellen immer nur einen kleinen Ausschnitt dar. Der Optimalfall einer Präsentation ist die Begehung vor Ort. Dies ist in der Realität oft nicht möglich. Mit der Methode der Photogrammetrie zur Bestandsaufnahme und Virtual-Reality als Präsentationsmedium können die Gebäude ortsunabhängig virtuell begangen werden.</p>
+      <p>Ziel dieser Arbeit ist es, zu evaluieren, ob die Bestandsaufnahme von großen und komplexen Gebäuden mittels Photogrammetrie möglich ist und welche Strategien notwendig sind. Ein Fokus liegt dabei auf der Kombination von UAV (Unmanned Aerial Vehicle)- und Hand-Aufnahmen. Des Weiteren wird ein Workflow erarbeitet, welcher die Weiterverarbeitung des aus der Photogrammetrie entstandenen 3D-Modells, bis zur Präsentation von Veranstaltungskonzepten in Virtual-Reality beschreibt.</p>
+      <p>Um die Thematik in der Praxis zu Testen wurde der Workflow am Beispiel Schloss Waldenfels praktisch angewendet. Es wurde der gesamte Außenraum sowie die im Schloss vorhandenen Veranstaltungsräume photogrammetrisch vermessen und mit Virtual-Reality begehbar gemacht. Zusätzlich wurde eine Applikation entwickelt, die es ermöglicht, Szenarien für Veranstaltungen im gescannten Umfeld zu erstellen und in VR zu präsentieren.</p>
+    </div>
+  </div>
+
+      
+      
+<!--__________________________Schloss Waldenfels___________________________-->
+  <div class="zwischenüberschrift"><h1>Schloss Waldenfels</h1></div>
+  <div class="row">
+    <div class="column fullw">
+      <img src="images/Waldenfels/WF.jpg">   
+      <img src="images/Waldenfels/WF_Lage.png">
+      <div class="fototitel">Lage Schloss Waldenfels</div>
+      <img src="images/Waldenfels/aerialfoto.jpg"></div></div>
+
+
+  <div class="row">
+    <div class="column left">       
+      <img src="images/Waldenfels/10000000000004550000043CFB573FD670561B93.jpg"></div>
+    <div class="column right">       
+        <p>Das Schloss befindet sich in Oberösterreich nahe der tschechischen Grenze, nördlich von Linz. Genauer im Mühlviertel in der Gemeinde Reichenthal im Ortsgebiet Hayrl. Gut in die hügelige Landschaft eingegliedert, steht das Schloss auf einer Felserhebung. Der heutige Besitzer Dominik Grundemann-Falkenberg hat das Schloss 2001 übernommen.</p></div>
+  </div>
+  <div class="row">
+    <div class="column fullw">       
+      <img src="images/Waldenfels/03_EG_.png">
+      <div class="fototitel">Grundriss EG</div></div>
+      </div>
+  <div class="row">
+      <div class="column left">       
+          <img src="images/Waldenfels/04_1OG.png">
+          <div class="fototitel">Grundriss 1.OG</div></div>
+      <div class="column right">       
+          <h2>Temporär öffentliche Nutzung</h2>
+          <p>Seit 1636 befindet sich Schloss Waldenfels in Besitz der Grafen Grundemann von Falkenberg. Das Schloss wurde bis zur Übernahme von Domink Grundemann Falkenberg ausschließlich privat genutzt. Es können Teile des Schlosses für temporäre Veranstaltungen zur angemietet werden, die restliche Zeit wird das Schloss privat genutzt. Die im Plan in orange eingezeichneten Bereiche stehen für eine temporäre öffentliche Nutzung zur Verfügung. Im ersten Obergeschoss befinden sich der private Wohnbereich des Besitzers.</p></div>
+  </div>
+
+<!--__________________________Idee___________________________-->
+  <div class="zwischenüberschrift">
+    <h1>Idee</h1></div>
+
+  <div class="row">
+    <div class="column left">       
+        <img src="images/Waldenfels/vr.jpg">
+        <div class="fototitel"></div></div>
+    <div class="column right">
+        <h2>Veranstaltungsplanung und Präsentation im denkmalgeschützten Kontext</h2>      
+        <p>Der Optimalfall einer Präsentation ist die Begehung vor Ort. Dies ist in der Realität oft nicht möglich. Mit der Methode der Photogrammetrie zur Bestandsaufnahme und Virtual-Reality als Präsentationsmedium können die Gebäude ortsunabhängig virtuell begangen werden. <br>
+        Zusätzlich wurde eine Applikation entwickelt, die es ermöglicht Szenarien für Veranstaltungen im gescannten Umfeld zu erstellen und in VR zu präsentieren.</p></div>
+  </div>
+
+  <div class="row">
+    <div class="column fullw">       
+      <img src="images/Waldenfels/konzept.png">
+      <div class="fototitel"></div></div>
+  </div>
+
+<!--__________________________Umsetzung___________________________-->
+  <div class="zwischenüberschrift">
+      <h1>Bauaufnahme</h1></div>
+
+  <div class="row">
+    <div class="column col_01">       
+        <img src="images/Waldenfels/sessel.png">
+        <div class="fototitel">Möbel aus dem Inventar</div></div>
+    <div class="column col_02">       
+        <img src="images/Waldenfels/räume_modell.png">
+        <div class="fototitel">Veranstaltungsräume</div></div>
+    <div class="column col_03">       
+        <img src="images/Waldenfels/wf_modell.png">
+        <div class="fototitel">Aussenbereiche</div></div>
+  </div>
+
+  <div class="row">
+      <div class="column col_01">       
+          <img src="images/Waldenfels/drohne.png">
+          <div class="fototitel">DJI-Phantom 4 Pro</div></div>
+      <div class="column col_02">       
+          <img src="images/Waldenfels/OMD.png">
+          <div class="fototitel">Olympus OM-D E-M10 II</div></div>
+      <div class="column col_03">    
+          <h2>Photogrammetrie</h2>   
+          <p>Die Bauaufnahme erfolgte mit der Methode der Photogrammetrie. Es wurden Teile der im Schloss vorhandenen Möblierung, die im Erdgeschoss befindlichen Veranstaltungsräume, sowie die gesamten Aussenbereiche des Schlosses aufgenommen.</p>
+          <p>Die Aufnahmen wurden mit einer Fotodrohne und einer handelsüblichen Systemkamera durchgeführt.</p>
+        </div></div>
+  </div>
+  <div class="row">
+      <div class="column fullw">       
+        <img src="images/Waldenfels/Aufnahmestrategie.png">
+        <div class="fototitel">Aufnahmestrategie</div>
+        <img src="images/Waldenfels/kamerapositionen.png">
+        <div class="fototitel">Kamerapositionen</div>
+        <img src="images/Waldenfels/004.png">
+        <div class="fototitel">Punktwolke aus dem Photogrammetrieprozess</div>
+        <img src="images/Waldenfels/wf_modell.png">
+        <div class="fototitel">Texturiertes Flächennetz der Aussenbereiche aus dem Photogrammetrieprozess</div>
+        <img src="images/Waldenfels/innenbereiche.png">
+        <div class="fototitel">Texturiertes Flächennetz eines Veranstaltungsraumes aus dem Photogrammetrieprozess</div>
+      </div>
+  </div>
+
+<!--__________________________VR___________________________-->
+  <div class="zwischenüberschrift">
+    <h1>Virtual-Reality Applikation</h1></div>
+
+  <div class="row">
+      <div class="column fullw">       
+          <img src="images/Waldenfels/ue4.jpg">
+          <div class="fototitel">Entwicklung der VR-Applikation in der Unreal Engine 4</div>
+          <video autoplay muted loop class="video">
+              <source src="images/Waldenfels/Raeume.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+          </video>
+          <div class="fototitel">Im Editor Modus können die gescannten 3D-Räume möbliert und anschließend in Virtual-Reality begangen werden. Durch die einfache Bedienung der Applikation ist es jedem möglich in kürzester Zeit verschiedene Szenarien zu erstellen.</div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="column left">       
+          <img src="images/Waldenfels/raumkonfig (1).jpg">
+          <div class="fototitel"></div></div>
+      <div class="column right">
+          <img src="images/Waldenfels/raumkonfig (4).jpg">
+          <div class="fototitel"></div></div>
+    </div>
+    <div class="row">
+        <div class="column left">       
+            <img src="images/Waldenfels/raumkonfig (2).jpg">
+            <div class="fototitel"></div></div>
+        <div class="column right">
+            <img src="images/Waldenfels/raumkonfig (3).jpg">
+            <div class="fototitel"></div></div>
+    </div>
+    <div class="row">
+        <div class="column fullw">       
+            <video autoplay muted loop class="video">
+                <source src="images/Waldenfels/Wf_0.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <div class="fototitel">Bildschirmaufnahme einer VR-Begehung</div>
+        </div>
+    </div>
+    
+</body>
+</html>

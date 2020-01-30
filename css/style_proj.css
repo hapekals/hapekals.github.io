@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Gayathri|Montserrat&display=swap');
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: rgba(255, 255, 255, 1);
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: repeating-linear-gradient(-30deg, rgba(185, 185, 185, 0.25), rgba(136, 136, 136, 0.25) 1px,transparent 1px, transparent 6px);
+  background-size: 5px 5px;
+  background-color: var(--main-bg-color);
+  color: var(--main-txt-color);
+}
+
+li {
+  float: left;
+}
+
+/*---------------------------Sidebar--------*/
+.side {
+  height: 100vh;
+  position: fixed;
+  float: left;
+  width: 35vw;
+  overflow-y: auto;
+}
+.beschreibung {
+  position: relative;
+  padding-right: 4vw;
+  padding-left: 2vw;
+  padding-top: 5vw;
+}
+
+/*-------------------Projekts--------*/
+.zwischenüberschrift {
+  text-align: center;
+  margin-left: 35vw;
+}
+
+.row {
+  margin-left: 35vw;
+}
+
+.column {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+/*-------------------50%--------*/
+.left {
+  float: left;
+  width: 50%;
+}
+.left img {
+  width: 100%;
+  padding: 2vw;
+  padding-bottom: 0vw;
+}
+
+.left p, .left h2  {
+  padding-left: 2vw;
+  padding-top: 2vw;
+}
+
+.right {
+  float: left;
+  width: 50%;
+}
+.right img {
+  width: 100%;
+  padding: 2vw;
+  padding-bottom: 0vw;
+}
+.right p, .right h2  {
+  padding-left: 2vw;
+  padding-top: 2vw;
+  padding-right: 12vw;
+}
+/*-------------------100%--------*/
+.fullw {
+  float: left;
+  width: 100%;
+}
+.fullw img{
+  width: 100%;
+  padding: 2vw;
+  padding-bottom: 0vw;
+}
+/*-------------------33.33%--------*/
+.col_01, .col_02, .col_03 {
+  float: left;
+  width: 33.33%;
+}
+.col_01 img, .col_02 img, .col_03 img {
+  width: 100%;
+  padding: 2vw;
+  padding-bottom: 0vw;
+}
+.col_01 p, .col_01 h2, .col_02 p, .col_02 h2, .col_03 p, .col_03 h2 {
+  padding-left: 2vw;
+  padding-top: 1vw;
+  padding-right: 2vw;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.video {
+  width: 100%;
+  padding: 2vw;
+  padding-bottom: 0vw;
+}
+
+@media screen and (max-width: 1450px) {
+  li {
+    float: none;
+  }
+  .side{
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 15vw;
+    padding-left: 15vw;
+  }
+  .beschreibung {
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+  .row {
+    margin: 0;
+  }
+  .right, .left, .fullw{
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 4vw;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  .right p, .right h2, .left p, .left h2 {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    text-align: center;
+  }
+
+  .zwischenüberschrift {
+    padding-left: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  
+}
