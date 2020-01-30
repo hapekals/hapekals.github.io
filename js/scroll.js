@@ -9,10 +9,10 @@ function getScroll() {
   var wp = $( window ).height() * 0.01;
 
   console.log(wp);
-  if (bottom > wp * 30){
-    fadeobj.fadeOut(500)
+  if (bottom > wp * 50){
+    fadeobj.fadeOut(600)
   }else {
-    fadeobj.fadeIn(500);
+    fadeobj.fadeIn(600);
   }
 }
 
