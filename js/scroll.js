@@ -14,5 +14,11 @@ function getScroll() {
   }else {
     fadeobj.fadeIn(600);
   }
+
+  if (bottom > $( window ).height()){
+    $("#titelimg img").hide()
+  } else{
+    $("#titelimg img").show()
+  }
 }
 
